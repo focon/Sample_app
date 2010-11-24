@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe PagesController do
 render_views
+
+
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
@@ -13,6 +15,10 @@ render_views
       response.should have_selector('title', 
                                    :content => 'Ruby on Rails: Welcome aboard | Home')
     end
+      it "should not be blank" do
+      get 'home'
+      response.body.should_not =~ /<body>\s*<\/body>/ 
+    end
   end
 
   describe "GET 'contact'" do
@@ -20,11 +26,21 @@ render_views
       get 'contact'
       response.should be_success
     end
+    it "should have the correct title" do
+      get 'contact'
+      response.should have_selector('title', 
+                                   :content => 'Ruby on Rails: Welcome aboard | Contact')
+    end
   end
   describe "GET 'about'" do
     it "should be successful" do
       get 'about'
       response.should be_success
+    end
+    it "should have the correct title" do
+      get 'about'
+      response.should have_selector('title', 
+                                   :content => 'Ruby on Rails: Welcome aboard | About')
     end
   end
 

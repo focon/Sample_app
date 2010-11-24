@@ -1,5 +1,9 @@
 source 'http://rubygems.org'
+source 'http://gems.github.com'
+gem 'autotest-rails-pure', '4.1.0'
+# gem 'autotest-fsevent', '0.2.2'
 
+gem 'factory_girl'
 gem 'rails', '3.0.3'
 gem 'autotest-rails', '4.1.0'
 gem 'ZenTest', '4.4.0'
@@ -7,8 +11,17 @@ gem 'spork', '0.8.4'
 gem 'sqlite3-ruby','1.3.2', :require => 'sqlite3'
 gem 'heroku', '1.13.7'
 gem 'nokogiri','1.4.4'
-gem 'webrat', '0.7.2'
+gem 'webrat', '0.7.1'
+gem  'carlosbrando-autotest-notification'
+gem 'autotest-growl','0.2.6'
+gem 'rcov'
+gem 'cucumber'
+gem 'rspec-core'
+gem 'rspec-expectations'
+gem 'rspec-mocks'
+gem 'diff-lcs'
 # Use unicorn as the web server
+
 # gem 'unicorn'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
