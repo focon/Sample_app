@@ -2,7 +2,9 @@ require 'spec_helper'
 
 describe PagesController do
 render_views
-
+before :each do
+@base_title ='Ruby on Rails: Welcome aboard'
+end
 
   describe "GET 'home'" do
     it "should be successful" do
@@ -13,7 +15,7 @@ render_views
     it "should have the correct title" do
       get 'home'
       response.should have_selector('title', 
-                                   :content => 'Ruby on Rails: Welcome aboard | Home')
+                                   :content => "#{@base_title} | Home")
     end
       it "should not be blank" do
       get 'home'
@@ -29,7 +31,7 @@ render_views
     it "should have the correct title" do
       get 'contact'
       response.should have_selector('title', 
-                                   :content => 'Ruby on Rails: Welcome aboard | Contact')
+                                   :content => "#{@base_title} | Contact")
     end
   end
   describe "GET 'about'" do
@@ -40,8 +42,8 @@ render_views
     it "should have the correct title" do
       get 'about'
       response.should have_selector('title', 
-                                   :content => 'Ruby on Rails: Welcome aboard | About')
+                                   :content => "#{@base_title} | About")
     end
-  end
 
+  end 
 end
