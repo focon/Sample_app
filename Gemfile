@@ -2,18 +2,18 @@ source 'http://rubygems.org'
 source 'http://gems.github.com'
 gem 'autotest-rails-pure', '4.1.2'
 # gem 'autotest-fsevent', '0.2.2'
-
+gem 'i18n','0.4.2'
 gem 'factory_girl'
-gem 'rails', '3.0.3'
+gem 'rails'
 gem 'autotest-rails', '4.1.0'
-gem 'ZenTest', '4.4.0'
-gem 'spork', '0.8.4'
+gem 'ZenTest'
+gem 'spork'
 gem 'sqlite3-ruby','1.3.2', :require => 'sqlite3'
 gem 'heroku', '1.14.4'
 gem 'nokogiri','1.4.4'
 gem 'webrat', '0.7.2'
 gem  'carlosbrando-autotest-notification'
-gem 'autotest-growl','0.2.6'
+gem 'autotest-growl'
 gem 'rcov'
 gem 'cucumber'
 gem 'rspec-core'
@@ -42,8 +42,8 @@ gem 'diff-lcs'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
  group :test do
-   gem 'rspec','2.1.0'
+   gem 'rspec'
  end
 group :development do
-  gem 'rspec-rails','2.1.0'
+  gem 'rspec-rails'
  end
