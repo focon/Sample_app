@@ -1,4 +1,4 @@
-require 'spec_helper'
+ require 'spec/spec_helper'
 
 describe PagesController do
 render_views
@@ -43,6 +43,18 @@ end
       get 'about'
       response.should have_selector('title', 
                                    :content => "#{@base_title} | About")
+    end
+
+  end 
+ describe "GET 'about'" do
+    it "should be successful" do
+      get 'help'
+      response.should be_success
+    end
+    it "should have the correct title" do
+      get 'help'
+      response.should have_selector('title', 
+                                   :content => "#{@base_title} | Help")
     end
 
   end 
