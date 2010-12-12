@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   remote: http://gems.github.com/
   specs:
-    ZenTest (4.4.1)
+    ZenTest (4.4.2)
     abstract (1.0.0)
     actionmailer (3.0.3)
       actionpack (= 3.0.3)
@@ -30,10 +30,11 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
+    annotate-models (1.0.4)
     arel (2.0.6)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
-    autotest-growl (0.2.8)
+    autotest-growl (0.2.9)
     autotest-rails (4.1.0)
       ZenTest
     autotest-rails-pure (4.1.2)
@@ -130,7 +131,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ZenTest (= 4.4.1)
+  ZenTest (= 4.4.2)
+  annotate-models
   autotest (= 4.4.6)
   autotest-growl
   autotest-rails (= 4.1.0)

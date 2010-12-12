@@ -9,7 +9,7 @@ gem 'factory_girl'
 gem 'rails'
 gem 'autotest-rails', '4.1.0'
 gem 'autotest', '4.4.6'
-gem 'ZenTest','4.4.1'
+gem 'ZenTest','4.4.2'
 gem 'spork'
 gem 'sqlite3-ruby','1.3.2', :require => 'sqlite3'
 gem 'heroku', '1.14.6'
@@ -48,6 +48,7 @@ gem 'diff-lcs'
 
 group :development do
   gem 'rspec-rails'
+  gem 'annotate-models' 
  end
 
 group :test do
