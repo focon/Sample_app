@@ -60,6 +60,7 @@ group :test do
   gem 'webrat', '0.7.2'
   gem 'autotest', '4.4.6'
   gem 'test-unit', '2.1.1'
+  gem 'factory_girl_rails' 
 end
 
 
