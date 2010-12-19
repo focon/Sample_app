@@ -24,6 +24,7 @@ gem 'rspec-core'
 gem 'rspec-expectations'
 gem 'rspec-mocks'
 gem 'diff-lcs'
+gem 'gravatar_image_tag'
 # Use unicorn as the web server
 
 # gem 'unicorn'

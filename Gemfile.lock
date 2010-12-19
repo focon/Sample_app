@@ -58,6 +58,7 @@ GEM
     gherkin (2.3.2)
       json (~> 1.4.6)
       term-ansicolor (~> 1.0.5)
+    gravatar_image_tag (0.1.0)
     heroku (1.14.6)
       json_pure (>= 1.2.0, < 1.5.0)
       launchy (~> 0.3.2)
@@ -145,6 +146,7 @@ DEPENDENCIES
   diff-lcs
   factory_girl
   factory_girl_rails
+  gravatar_image_tag
   heroku (= 1.14.6)
   hoe (>= 2.6.0)
   i18n (= 0.4.2)
