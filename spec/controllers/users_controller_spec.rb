@@ -34,10 +34,15 @@ end
       get :show, :id=>@user
       response.should have_selector('h1', :content =>@user.name)
     end
-          it "should have a gravatar" do
+          it "should have a profile image" do
       get :show, :id=>@user
       response.should have_selector('h1>img', :class => "gravatar")
     end
+        it "should have the correct URL" do
+      get :show, :id=>@user
+      response.should have_selector('td>a', :content =>user_path(@user), :href => user_path(@user))
+    end
+  
 end
  
   describe "GET 'new'" do
