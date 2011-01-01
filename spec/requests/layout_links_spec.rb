@@ -25,7 +25,7 @@ get '/signup'
 response.should have_selector('title', :content => "Sign up")
 end
 
-it "should have a Sign in page at '/sign in'" do
+it "should have a Sign in page at '/signin'" do
 get '/signin'
 response.should have_selector('title', :content => "Sign in")
 end
