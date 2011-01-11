@@ -133,7 +133,26 @@ User.should respond_to(:authenticate)
     it "should return the user on the email password match" do 
  User.authenticate(@attr[:email], @attr[:password]).should == @user
    end
+describe "Admin attributes" do
+before(:each) do
+@attr1= {:name=>"foconl",
+        :email=>"f@o.nll",
+        :password=> "foobarl",
+        :password_confirmation=>"foobarl"}
+ @user=User.create!(@attr1)
 end
-end
+  it "should respond to admin" do 
+@user.should respond_to(:admin)
    end
+ it "should not be admin by default" do 
+@user.should_not be_admin
+    end
+     it "should be convertible to admin" do
+      @user.toggle!(:admin)
+      @user.should be_admin
+    end
+end
+end
+end
+   end 
   
